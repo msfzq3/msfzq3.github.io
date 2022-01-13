@@ -1,7 +1,10 @@
 // 注意：live2d_path 参数应使用绝对路径
 //const live2d_path = "https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/";
-const live2d_path = "/plugins/live2d-widget/"; // 使用本地live2d-widget
-const cdn_path = "/plugins/live2d_api/"; // 使用本地live2d_api
+//const cdn_path = "https://cdn.jsdelivr.net/gh/fghrsh/live2d_api/"
+const live2d_path = "https://cdn.jsdelivr.net/gh/msfzq3/msfzq3.github.io/plugins/live2d-widget/"; // 使用cdn加速live2d-widget
+const cdn_path = "https://cdn.jsdelivr.net/gh/msfzq3/msfzq3.github.io/plugins/live2d_api/"; // 使用cdn加速live2d_api
+//const live2d_path = "/plugins/live2d-widget/"; // 使用本地live2d-widget
+//const cdn_path = "/plugins/live2d_api/"; // 使用本地live2d_api
 
 // 封装异步加载资源的方法
 function loadExternalResource(url, type) {
@@ -35,7 +38,6 @@ if (screen.width >= 768) {
 		initWidget({
 			waifuPath: live2d_path + "waifu-tips.json",
 			//apiPath: "https://live2d.fghrsh.net/api/",
-			//cdnPath: "https://cdn.jsdelivr.net/gh/fghrsh/live2d_api/"
 			cdnPath: cdn_path
 		});
 	});
